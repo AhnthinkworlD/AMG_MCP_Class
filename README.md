@@ -51,3 +51,8 @@ Mac 더블클릭 파일은 Release ZIP에 실행 권한을 넣었다. Code → D
 ## 1.0.2 학생 안내와 Mac 설치 보강
 
 학생 공지·설치·AI 등록·첫 실습을 정리했습니다. Mac은 기존 수업 Python 재사용과 PATH 차이를 처리하고 CPU·OS 정보를 로그에 남깁니다. [원격 검사와 실기 점검 범위](docs/MAC_CI_VERIFICATION.md).
+
+
+## 실제 OS 설치 검사 결과
+
+Windows·Apple Silicon·Intel Mac의 설치와 MCP 서버 시작을 [원격에서 통과했습니다](docs/MAC_CI_VERIFICATION.md). Mac TD 실습은 사전 점검이 남아 있습니다.

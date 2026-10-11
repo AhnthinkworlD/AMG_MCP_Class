@@ -1,7 +1,7 @@
 # Mac — 실행 파일로 설치하기
 
 1. macOS 13 이상에서 CPU에 맞는 TouchDesigner 2025를 준비한다. 수업 제작·Windows 실행 검증 기준은 **2025.32820**이며 Mac에서 해당 빌드의 실기는 미검증이다. [Derivative 안내](https://derivative.ca/UserGuide/MacOS)
-2. 별도 [Python 3.10 이상 공식 설치본](https://www.python.org/downloads/macos/)을 설치한다. Universal2는 Apple Silicon과 Intel을 지원한다. 공식 Python의 `/Applications/Python 버전/Install Certificates.command`도 실행한다. [Python 안내](https://docs.python.org/3/using/mac.html)
+2. 별도 [Python 3.14.7 공식 Mac 설치본](https://www.python.org/ftp/python/3.14.7/python-3.14.7-macos11.pkg)을 설치한다. Universal2는 Apple Silicon과 Intel을 지원한다. 공식 Python의 `/Applications/Python 버전/Install Certificates.command`도 실행한다. [Python 안내](https://docs.python.org/3/using/mac.html)
 3. GitHub **Releases**의 `amg-mcp-class-1.0.2.zip`을 내려받아 전부 압축을 푼다.
 4. `01_Install_Mac.command`를 더블클릭하고 **INSTALL OK**를 기다린다.
 5. `touchdesigner/AMG_MCP_Class_10x10.toe`를 열고 로딩을 기다린다.
@@ -28,7 +28,7 @@ macOS 보안 경고가 보이면 본인 강사의 GitHub 파일인지 확인한�
 
 Bridge는 `/W03_BEGINNER_WATER/AMG_W04`, 포트 **9987**, Active **On**이다. 같은 포트의 Bridge는 하나만 켠다. Mac은 Win32 창 캡처·키보드·마우스 자동 입력을 사용하지 않으며 `td_preview_top`과 네이티브 노드 조작으로 실습한다.
 
-**현재 검증 범위:** Mac 경로·설정 분기, 주요 바이너리 의존성 가용성과 실행 스크립트 구문을 검사했다. 실제 Mac의 Finder 실행·설치 및 TouchDesigner 제작 검증은 아직 수행하지 않았다. 강사에게 CPU, macOS·TD·Python 버전과 `logs`의 연결 점검 로그를 전달하면 해당 Mac 상태를 확인할 수 있다.
+**현재 검증 범위:** [Apple Silicon·Intel의 실제 원격 Mac 설치와 MCP 서버 시작](MAC_CI_VERIFICATION.md)을 통과했다. 두 환경의 Python은 3.14.7이다. 개인 Mac의 Finder 더블클릭 및 TouchDesigner 제작·렌더 검사는 아직 수행하지 않았다. 강사에게 CPU, macOS·TD·Python 버전과 `logs`의 연결 점검 로그를 전달하면 해당 Mac 상태를 확인할 수 있다.
 
 
 설치 파일은 기존 수업 가상환경, 설치된 Python 배포본과 PATH의 실행 가능한 Python 3.10 이상을 확인합니다. Apple의 `/usr/bin/python3` 설치 유도용 실행 파일은 사용하지 않습니다. 점검 로그에는 CPU·macOS 정보와 선택한 Python 경로를 기록합니다.

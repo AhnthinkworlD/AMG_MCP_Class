@@ -1,6 +1,6 @@
 # Mac 사전 점검과 수업 진행
 
-Mac 학생 전원에게 같은 날 처음 설치시키기 전에 한 명과 먼저 설치와 실제 TD 제작을 확인합니다. GitHub 원격 검사는 Python 설치·MCP 서버 시작까지 확인하며 TD 렌더와 Finder 실행을 대신하지 않습니다.
+Mac 학생 전원에게 같은 날 처음 설치시키기 전에 한 명과 먼저 설치와 실제 TD 제작을 확인합니다. [GitHub의 Apple Silicon·Intel 원격 검사](MAC_CI_VERIFICATION.md)는 설치 파일 실행·의존성 설치·MCP 서버 시작을 통과했습니다. TD 렌더와 Finder 실행은 별도로 확인합니다.
 
 ## 사전 점검 순서
 
@@ -13,7 +13,7 @@ Mac 학생 전원에게 같은 날 처음 설치시키기 전에 한 명과 먼�
 
 | 점검 | 통과 기준 | 근거 |
 |---|---|---|
-| 설치 | INSTALL OK | install 로그 |
+| 설치 | INSTALL OK | 설치 창과 install 로그 |
 | TD 연결 | CHECK OK, 정확한 프로젝트명 | check 로그 |
 | AI 연결 | td_begin_session 정상 | AI 응답 |
 | 작품 | 위치 100샘플, 실제 원과 색·크기·시간 변화 | TD TOP 캡처와 검사 응답 |

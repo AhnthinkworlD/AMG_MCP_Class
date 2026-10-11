@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-12",
+  "run_url": "https://github.com/AhnthinkworlD/AMG_MCP_Class/actions/runs/38157778464",
+  "tested_commit": "b625fa6c8d0735780dc7a4b7343263689e9e58eb",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "install (macos-15-intel)",
+      "conclusion": "success"
+    },
+    {
+      "name": "install (windows-latest)",
+      "conclusion": "success"
+    },
+    {
+      "name": "install (macos-14)",
+      "conclusion": "success"
+    }
+  ],
+  "platforms": {
+    "amg-validation-macos-14": {
+      "MCP_stdio_startup": true,
+      "tool_count": 55,
+      "TouchDesigner_tested": false,
+      "python": "3.14.7",
+      "platform": "darwin",
+      "architecture": "arm64",
+      "os_version": "14.8.9",
+      "mcp": "2.3.0",
+      "httpx": "0.28.1"
+    },
+    "amg-validation-macos-15-intel": {
+      "MCP_stdio_startup": true,
+      "tool_count": 55,
+      "TouchDesigner_tested": false,
+      "python": "3.14.7",
+      "platform": "darwin",
+      "architecture": "x86_64",
+      "os_version": "15.7.9",
+      "mcp": "2.3.0",
+      "httpx": "0.28.1"
+    },
+    "amg-validation-windows-latest": {
+      "MCP_stdio_startup": true,
+      "tool_count": 55,
+      "TouchDesigner_tested": false,
+      "python": "3.13.16",
+      "platform": "win32",
+      "architecture": "AMD64",
+      "os_version": "2025Server",
+      "mcp": "2.3.0",
+      "httpx": "0.28.1"
+    }
+  },
+  "Mac_TD_render_tested": false,
+  "Finder_double_click_tested": false,
+  "scope": "Actual GitHub macOS/Windows installation, configuration logic, package integrity and MCP stdio startup"
+}
