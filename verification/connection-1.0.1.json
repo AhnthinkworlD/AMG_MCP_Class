@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-12",
+  "package_version": "1.0.1",
+  "AMG_server_version": "1.0.0",
+  "protocol_version": 2,
+  "TD_build": "2025.32820",
+  "OS": "Windows",
+  "fresh_TD_process": true,
+  "fresh_MCP_stdio_process": true,
+  "tools_discovered": 55,
+  "Bridge_TOX_live_reload_passed": true,
+  "callback_before": "webserver_callbacks",
+  "callback_after": "Webserver_callbacks",
+  "native_payload_change_only": [
+    {
+      "file": "AMG_MCP.tox",
+      "original_sha256": "64884633ba4e0732818573d02756297c9fa7d4c50f143be068bc2df912b3ccb4",
+      "fixed_sha256": "56a2c77a2857ee060a8232b0858b6a594a7152d58de49844c03fb12a18efb201",
+      "changed_payloads": [
+        "AMG_W04/webserver.parm"
+      ],
+      "all_other_payloads_unchanged": true
+    },
+    {
+      "file": "AMG_MCP_Class_10x10.toe",
+      "original_sha256": "2a92b7db1323676cc21f5d758b1b033f93165da7ca1375a62f40dc3681045990",
+      "fixed_sha256": "54283c56584d8dbc6b16745852d7ab08d9b9638a15af389aa46c36260f25e3fc",
+      "changed_payloads": [
+        "W03_BEGINNER_WATER/AMG_W04/webserver.parm"
+      ],
+      "all_other_payloads_unchanged": true
+    }
+  ],
+  "position_channels": [
+    {
+      "name": "tx",
+      "num_samples": 100,
+      "first_value": -0.5
+    },
+    {
+      "name": "ty",
+      "num_samples": 100,
+      "first_value": -0.5
+    },
+    {
+      "name": "tz",
+      "num_samples": 100,
+      "first_value": 0.0
+    }
+  ],
+  "render_resolution": [
+    1280,
+    1280
+  ],
+  "time_frame_changed_pixels": [
+    454346,
+    396322
+  ],
+  "reference_errors": 0,
+  "reference_warnings": 0,
+  "reloaded_Bridge_errors": 0,
+  "reloaded_Bridge_warnings": 0,
+  "temporary_Bridge_removed": true,
+  "global_root_scan_truncated": true,
+  "wheel_unchanged": true,
+  "Mac_hardware_tested": false,
+  "current_chat_MCP_still_uses_cached_9981": true,
+  "Codex_saved_config_endpoint": 9987,
+  "source_W04_TOE_unchanged": true,
+  "examples_PPT_PDF_unchanged": true,
+  "package_tests_passed": 4,
+  "student_check_BAT_passed": true
+}

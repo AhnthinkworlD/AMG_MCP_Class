@@ -1,0 +1,143 @@
+{
+  "TD_build": "2025.32820",
+  "AMG_version": "1.0.0",
+  "protocol": 2,
+  "Python": "3.13.16",
+  "MCP_tool_count": 55,
+  "endpoint": "http://127.0.0.1:9987/",
+  "currently_registered_9981_connection": "FAIL unknown_action: get_capabilities",
+  "Mac_runtime_verified": false,
+  "examples": {
+    "W05_PROMPT_PRACTICE": {
+      "CHOP_samples_per_channel": 100,
+      "visible_circles_at_v1": 100,
+      "visible_circles_at_v0": 0,
+      "unique_XY_at_PNG_precision": 100,
+      "unique_X": 10,
+      "unique_Y": 10,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 0.5042735042735043,
+      "v05_center_RGB": [
+        127,
+        127,
+        254
+      ],
+      "v1_center_RGB": [
+        254,
+        254,
+        254
+      ],
+      "time_different_pixels": [
+        437984,
+        398313
+      ],
+      "time_mask_different_pixels": [
+        219938,
+        181015
+      ],
+      "time_circle_mask_unchanged": false,
+      "TOX_reload_different_pixels": 0
+    },
+    "W05_EXAMPLE_20X20": {
+      "CHOP_samples_per_channel": 400,
+      "visible_circles_at_v1": 400,
+      "visible_circles_at_v0": 0,
+      "unique_XY_at_PNG_precision": 400,
+      "unique_X": 20,
+      "unique_Y": 20,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 0.5084745762711864,
+      "v05_center_RGB": [
+        126,
+        126,
+        254
+      ],
+      "v1_center_RGB": [
+        254,
+        254,
+        254
+      ],
+      "time_different_pixels": [
+        404139,
+        432390
+      ],
+      "time_mask_different_pixels": [
+        179419,
+        191646
+      ],
+      "time_circle_mask_unchanged": false,
+      "TOX_reload_different_pixels": 0
+    },
+    "W05_EXAMPLE_COLOR_ONLY": {
+      "CHOP_samples_per_channel": 100,
+      "visible_circles_at_v1": 100,
+      "visible_circles_at_v0": 100,
+      "unique_XY_at_PNG_precision": 100,
+      "unique_X": 10,
+      "unique_Y": 10,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 1.0,
+      "v05_center_RGB": [
+        127,
+        127,
+        254
+      ],
+      "v1_center_RGB": [
+        254,
+        254,
+        254
+      ],
+      "time_different_pixels": [
+        1039892,
+        1018343
+      ],
+      "time_mask_different_pixels": [
+        0,
+        0
+      ],
+      "time_circle_mask_unchanged": true,
+      "TOX_reload_different_pixels": 0
+    }
+  },
+  "errors": 0,
+  "warnings": 0,
+  "method": "AI decomposed the written requests into standard MCP calls; actual TOP pixels and TOX reloads checked.",
+  "reuse": "Primary example recreates eight nodes; Geometry SOP input shell and animated Noise are copied from original container2.",
+  "arbitrary_empty_project_generation_verified": false,
+  "full_CHOP_array_API_available": false,
+  "operator_inventory_is_not_creation_allowlist": true,
+  "unallowed_chopToDAT_and_choptoDAT_rejected": true,
+  "position_read_method": "Owned Math(+0.5) -> CHOP to TOP RGB -> PNG, then count unique XY / Z at 8-bit precision; temporary nodes removed.",
+  "original_fixed_Z_difference_pixels": 0,
+  "top_left_cell_correspondence": true,
+  "temporary_nodes_and_copies_removed": true,
+  "tools_tested": [
+    "td_begin_session",
+    "td_connect",
+    "td_copy_node",
+    "td_create_node",
+    "td_delete_node",
+    "td_disconnect",
+    "td_get_chop_channels",
+    "td_get_network_snapshot",
+    "td_get_param",
+    "td_get_td_version",
+    "td_health",
+    "td_list_children",
+    "td_list_params",
+    "td_load_component_tox",
+    "td_preview_top",
+    "td_save_component_tox",
+    "td_save_top_image",
+    "td_set_node_position",
+    "td_set_param",
+    "td_validate_network"
+  ],
+  "tools_tested_count": 20,
+  "all_55_tools_tested": false,
+  "live_container_paths": [
+    "/W03_BEGINNER_WATER/W05_PROMPT_PRACTICE",
+    "/W03_BEGINNER_WATER/W05_EXAMPLE_20X20",
+    "/W03_BEGINNER_WATER/W05_EXAMPLE_COLOR_ONLY"
+  ]
+}

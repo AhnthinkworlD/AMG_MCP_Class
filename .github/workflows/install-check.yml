@@ -1,0 +1,47 @@
+name: AMG MCP install check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-14, macos-15-intel]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Install via Windows BAT (no interactive pause)
+        if: runner.os == 'Windows'
+        shell: cmd
+        env:
+          AMG_INSTALL_ROOT: ${{ runner.temp }}/AMG MCP CI
+          AMG_FORCE_BOOTSTRAP: '1'
+          AMG_NO_PAUSE: '1'
+          AMG_NO_OPEN: '1'
+        run: call 01_Install_Windows.bat
+      - name: Install via Mac command (no interactive pause)
+        if: runner.os == 'macOS'
+        env:
+          AMG_INSTALL_ROOT: ${{ runner.temp }}/AMG MCP CI
+          AMG_NO_PAUSE: '1'
+          AMG_NO_OPEN: '1'
+        run: bash ./01_Install_Mac.command
+      - name: Check configuration logic and package integrity
+        run: python -m unittest discover -s tests -v
+      - name: Start MCP stdio server (no TouchDesigner)
+        run: python tests/server_startup.py --root "${{ runner.temp }}/AMG MCP CI" --report verification/ci-platform.json
+      - name: Keep platform result and installer logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: amg-validation-${{ matrix.os }}
+          path: |
+            verification/ci-platform.json
+            ${{ runner.temp }}/AMG MCP CI/logs/*.log
+          if-no-files-found: warn

@@ -1,0 +1,9 @@
+AMG_MCP로 현재 열려 있는 TouchDesigner와 연결 상태를 실제로 확인해줘.
+td_begin_session으로 프로젝트명, Root, Bridge 경로, TD 빌드, AMG 버전, protocol, 지원 기능을 읽어줘.
+수업 기준은 TD 2025.32820, 기존 AMG_MCP 1.0 / protocol 2, 포트 9987이야.
+노드 생성·파라미터 설정·연결·CHOP 읽기·TOP 미리보기·오류 검사·TOX 저장/재로드 기능을 확인해줘.
+capabilities의 operator_types에서 실제 생성 허용 노드도 읽어줘. TD 전체 노드 목록에 있다고 MCP가 그 노드를 생성할 수 있다고 판단하지 마.
+현재 Root의 자식 노드를 읽고 기준 10×10 원 예제를 찾아줘. 프로젝트명과 경로를 먼저 보고해줘.
+unknown_action: get_capabilities가 나오면 구버전 Bridge 연결일 수 있으니 제작하지 말고 오류와 설정의 포트를 알려줘. 설치 후 생성된 9987 설정과 현재 TD Bridge를 확인하도록 안내해줘.
+Mac에서도 가능한 네이티브 노드 조작과 td_preview_top을 사용해줘.
+이 단계는 읽기 검사만 하고 기존 노드, AI 설정, TOE는 수정하지 마.
