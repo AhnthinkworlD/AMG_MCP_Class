@@ -8,7 +8,7 @@
 
 ## 학생용 Release
 
-GitHub Releases에서 새 릴리스를 만들고 `amg-mcp-class-1.0.2.zip`을 Assets에 올린다. 릴리스 설명에 Windows/Mac 안내를 연결한다. 저장소 기본 ZIP도 지원하지만 학생에게는 이 고정 패키지를 안내하는 것이 좋다.
+GitHub Releases에서 새 릴리스를 만들고 `amg-mcp-class-1.0.3.zip`을 Assets에 올린다. 릴리스 설명에 Windows/Mac 안내를 연결한다. 저장소 기본 ZIP도 지원하지만 학생에게는 이 고정 패키지를 안내하는 것이 좋다.
 
 ## Mac 컴퓨터 없이 검사하기
 

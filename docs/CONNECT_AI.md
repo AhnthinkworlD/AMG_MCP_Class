@@ -20,3 +20,6 @@ TD를 먼저 열고 [연결 프롬프트](../prompts/01-connect.txt)를 AI에 �
 ## 기존 9981 등록
 
 AMG 수업 Bridge는 **9987**이다. `TD_MCP_URL`이 9981이면 설치가 생성한 9987 설정으로 수정한다. 저장 뒤 MCP 서버를 재시작한다. 설정 변경 전 실행한 프로세스는 이전 주소를 계속 사용할 수 있다. [새 시작 검증](CONNECTION_VERIFICATION_1.0.1.md).
+
+
+Codex 설정의 Command에는 생성된 TOML `command`의 **큰따옴표 안 경로만** 복사합니다. Windows 경로는 복사하기 쉽게 `/`로 생성합니다. 인수 `-m`과 `td_mcp_server.main`은 별도로 추가합니다.

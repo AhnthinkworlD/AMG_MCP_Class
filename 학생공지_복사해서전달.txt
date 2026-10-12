@@ -3,7 +3,7 @@
 이번 시간에는 AI에 요청해서 TouchDesigner 안에 원 100개를 만들고, 실제 결과를 확인하는 실습을 진행합니다.
 
 1. https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/latest 에서 최신 수업 ZIP을 받고 전부 압축을 풀어주세요.
-2. TouchDesigner와 수업용 Codex의 로그인·사용 가능 여부를 확인해주세요. TD 검증 기준은 2025.32820입니다.
+2. TouchDesigner와 수업용 Codex의 로그인·사용 가능 여부를 확인해주세요. TD 검증 기준은 2025.33230입니다.
 3. Windows는 01_Install_Windows.bat을, Mac은 01_Install_Mac.command를 실행하고 INSTALL OK를 확인해주세요.
    Mac은 공식 Python 3.10 이상을 먼저 설치하고 Install Certificates.command도 실행해야 합니다. Windows는 별도 Python 설치가 필요 없습니다.
 4. touchdesigner/AMG_MCP_Class_10x10.toe를 열어주세요.

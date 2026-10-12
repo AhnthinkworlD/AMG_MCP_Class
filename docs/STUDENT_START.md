@@ -5,7 +5,7 @@
 ## 수업 전에 준비
 
 1. 강사가 공유한 [최신 배포 ZIP](https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/latest)을 내려받아 **전부 압축을 풉니다.** 설치 파일 하나만 꺼내지 마세요.
-2. TouchDesigner를 준비합니다. 수업 검증 기준은 **2025.32820**입니다. 다른 빌드는 강사와 먼저 확인합니다.
+2. TouchDesigner를 준비합니다. 현재 최신 정식 버전은 **2025.33230**입니다(2026-10-12 확인). [공식 다운로드](https://derivative.ca/download)에서 확인하고 설치합니다.
 3. 수업에서는 **Codex의 로컬 MCP 연결**을 기준으로 진행합니다. 앱에서 로그인과 메시지 전송이 되는지 미리 확인합니다. 사용할 수 있는 모델과 사용량은 본인의 계정에 따라 달라집니다. [공식 MCP 안내](https://learn.chatgpt.com/docs/extend/mcp?surface=cli)
 4. **Mac만:** [검증 버전 Python 3.14.7 Mac 설치본](https://www.python.org/ftp/python/3.14.7/python-3.14.7-macos11.pkg)을 먼저 설치하고, Python 설치 폴더의 `Install Certificates.command`도 실행합니다. Windows는 설치 파일이 필요한 Python을 자동으로 준비합니다.
 
@@ -61,3 +61,6 @@ AI에게 설명만 듣고 끝내지 말고 **실제 TD 화면과 검사 결과**
 | 무료 사용량이나 계정 제한에 걸림 | 같은 실습을 짝과 진행하고 요청문·예상 결과·실제 결과를 함께 기록 |
 
 로그는 `AMG_MCP_Class/logs` 폴더에 있습니다. Mac 점검 로그에는 CPU와 macOS 정보도 기록됩니다. 강사에게는 실패한 창과 해당 점검 로그를 전달합니다.
+
+
+Codex 설정의 Command에는 생성된 TOML `command`의 **큰따옴표 안 경로만** 복사합니다. Windows 경로는 복사하기 쉽게 `/`로 생성합니다. 인수 `-m`과 `td_mcp_server.main`은 별도로 추가합니다.

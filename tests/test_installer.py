@@ -23,6 +23,14 @@ class InstallerTests(unittest.TestCase):
         _, toml=install.configurations('C:/Users/Student Name/.venv/Scripts/python.exe',9987,'win32')
         self.assertNotIn('disabled_tools',toml)
 
+    def test_windows_command_can_be_copied_from_toml(self):
+        import tomllib
+        config,toml=install.configurations(r'C:\Users\학생 이름\AMG_MCP_Class\.venv\Scripts\python.exe',9987,'win32')
+        command=config['mcpServers']['AMG_MCP']['command']
+        self.assertNotIn('\\',command)
+        self.assertEqual(tomllib.loads(toml)['mcp_servers']['amg_td']['command'],command)
+        self.assertIn('C:/Users/학생 이름/',command)
+
     def test_package_hashes(self):
         root=Path(__file__).resolve().parents[1]
         for line in (root/'SHA256SUMS').read_text(encoding='utf-8').splitlines():

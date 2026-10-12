@@ -1,19 +1,24 @@
 # AMG_MCP — 학생용 설치 패키지
 
+## 2026-10-12 최신 TD 2025.33230
+
+현재 수업 기준과 예제는 **2025.33230 Official**입니다. 최신 버전에서 예제3종과 저장 TOE 새 실행을 검사했습니다. [최신 실제 검증](docs/TD_LATEST_VERIFICATION.md). 아래32820 기록은 이전 제작 이력입니다.
+
+
 ## 학생은 여기부터 시작
 
-[학생 설치와 첫 실습 안내](docs/STUDENT_START.md)를 먼저 읽습니다. [최신 Release](https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/latest)에서 **amg-mcp-class-1.0.2.zip** 전체를 받습니다. 수업 AI 안내는 Codex의 로컬 MCP 연결을 기준으로 합니다.
+[학생 설치와 첫 실습 안내](docs/STUDENT_START.md)를 먼저 읽습니다. [최신 Release](https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/latest)에서 **amg-mcp-class-1.0.3.zip** 전체를 받습니다. 수업 AI 안내는 Codex의 로컬 MCP 연결을 기준으로 합니다.
 
 강사는 [Mac 사전 점검과 수업 진행](docs/TEACHER_MAC_CHECK.md), [복사해서 전달할 학생 공지](학생공지_복사해서전달.txt)를 사용합니다.
 
 
 5주차는 기존 AMG_MCP 1.0 / protocol 2를 사용한다. 개발 중인 새 앱과 별개다.
 
-**TD 기준: TouchDesigner 2025.32820.** 실제 제작·실행 검증을 이 빌드에서 수행했다. 다른 빌드의 전체 호환성은 별도 확인한다.
+**TD 기준: TouchDesigner 2025.33230.** 실제 제작·실행 검증을 이 빌드에서 수행했다. 다른 빌드의 전체 호환성은 별도 확인한다.
 
 **준비:** TouchDesigner, MCP를 지원하는 AI 클라이언트, 인터넷 연결. Windows는 Python이 없어도 설치 BAT이 공식 Python 3.13.16을 수업용 폴더에 자동 준비한다. 이미 실행 가능한 Python 3.10+가 있으면 사용한다. Mac은 [공식 Python 설치본](https://www.python.org/downloads/macos/)을 먼저 설치한다.
 
-GitHub Releases의 `amg-mcp-class-1.0.2.zip`을 받고 **압축을 모두 푼다.**
+GitHub Releases의 `amg-mcp-class-1.0.3.zip`을 받고 **압축을 모두 푼다.**
 
 | 순서 | Windows | Mac |
 |---|---|---|

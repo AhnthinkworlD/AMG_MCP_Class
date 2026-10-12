@@ -1,7 +1,7 @@
 # Windows — 더블클릭으로 설치하기
 
-1. **TouchDesigner 2025.32820**을 기준으로 수업 예제를 준비한다. 이 빌드에서 실제 제작·실행을 검증했다. Windows는 별도 Python을 미리 설치하지 않아도 된다.
-2. GitHub Releases에서 `amg-mcp-class-1.0.2.zip`을 다운로드하고 **모두 압축 풀기**를 한다. ZIP 안에서 BAT만 꺼내지 않는다.
+1. **TouchDesigner 2025.33230**을 기준으로 수업 예제를 준비한다. 이 빌드에서 실제 제작·실행을 검증했다. Windows는 별도 Python을 미리 설치하지 않아도 된다.
+2. GitHub Releases에서 `amg-mcp-class-1.0.3.zip`을 다운로드하고 **모두 압축 풀기**를 한다. ZIP 안에서 BAT만 꺼내지 않는다.
 3. `01_Install_Windows.bat`을 더블클릭한다. 인터넷으로 의존성을 설치하므로 첫 실행은 시간이 걸린다. **INSTALL OK**를 기다린다. 관리자 권한은 필요 없다.
 4. `touchdesigner/AMG_MCP_Class_10x10.toe`를 열고 로딩이 끝날 때까지 기다린다.
 5. `02_Check_Windows.bat`을 더블클릭한다. **CHECK OK**와 내가 연 `project_name`을 확인한다. `protocol_version: 2`, `required_actions_present: true`, `project_children_read: true`가 표시된다.

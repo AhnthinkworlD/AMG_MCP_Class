@@ -1,0 +1,121 @@
+{
+  "TD_build": "2025.33230",
+  "AMG_version": "1.0.0",
+  "protocol": 2,
+  "Python": "3.11.2",
+  "MCP_tool_count": 55,
+  "endpoint": "http://127.0.0.1:9987/",
+  "cached_old_connection_note": "Saved Codex config uses9987; verify active client separately",
+  "Mac_TD_render_verified": false,
+  "Mac_install_MCP_CI_verified": true,
+  "examples": {
+    "W05_PROMPT_PRACTICE": {
+      "CHOP_samples_per_channel": 100,
+      "visible_circles_at_v1": 100,
+      "visible_circles_at_v0": 0,
+      "unique_XY_at_PNG_precision": 100,
+      "unique_X": 10,
+      "unique_Y": 10,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 0.5042735042735043,
+      "v05_center_RGB": [
+        126,
+        126,
+        254
+      ],
+      "v1_center_RGB": [
+        254,
+        254,
+        254
+      ],
+      "time_different_pixels": [
+        409651,
+        394876
+      ],
+      "time_mask_different_pixels": [
+        186345,
+        152208
+      ],
+      "time_circle_mask_unchanged": false,
+      "TOX_reload_different_pixels": 0
+    },
+    "W05_EXAMPLE_20X20": {
+      "CHOP_samples_per_channel": 400,
+      "visible_circles_at_v1": 400,
+      "visible_circles_at_v0": 0,
+      "unique_XY_at_PNG_precision": 400,
+      "unique_X": 20,
+      "unique_Y": 20,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 0.5084745762711864,
+      "v05_center_RGB": [
+        126,
+        126,
+        254
+      ],
+      "v1_center_RGB": [
+        254,
+        254,
+        254
+      ],
+      "time_different_pixels": [
+        442030,
+        481053
+      ],
+      "time_mask_different_pixels": [
+        177619,
+        197680
+      ],
+      "time_circle_mask_unchanged": false,
+      "TOX_reload_different_pixels": 0
+    },
+    "W05_EXAMPLE_COLOR_ONLY": {
+      "CHOP_samples_per_channel": 100,
+      "visible_circles_at_v1": 100,
+      "visible_circles_at_v0": 100,
+      "unique_XY_at_PNG_precision": 100,
+      "unique_X": 10,
+      "unique_Y": 10,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 1.0,
+      "v05_center_RGB": [
+        126,
+        126,
+        254
+      ],
+      "v1_center_RGB": [
+        254,
+        254,
+        254
+      ],
+      "time_different_pixels": [
+        1039176,
+        1017334
+      ],
+      "time_mask_different_pixels": [
+        0,
+        0
+      ],
+      "time_circle_mask_unchanged": true,
+      "TOX_reload_different_pixels": 0
+    }
+  },
+  "errors": 0,
+  "warnings": 0,
+  "method": "AI decomposed the written requests into standard MCP calls; actual TOP pixels and TOX reloads checked.",
+  "reuse": "Primary example recreates eight nodes; Geometry SOP input shell and animated Noise are copied from W05_REFERENCE_10X10, originally based on user container2.",
+  "arbitrary_empty_project_generation_verified": false,
+  "full_CHOP_array_API_available": false,
+  "operator_inventory_is_not_creation_allowlist": true,
+  "position_read_method": "Owned Math(+0.5) -> CHOP to TOP RGB -> PNG, then count unique XY / Z at 8-bit precision; temporary nodes removed.",
+  "top_left_cell_correspondence": true,
+  "temporary_nodes_and_copies_removed": true,
+  "reference_fixed_Z_difference_pixels": 0,
+  "registered_MCP_connected_to_latest_TD": true,
+  "MCP2": "2.2.x",
+  "date": "2026-10-12",
+  "seed_saved_and_reopened_in_latest_TD": true,
+  "seed_only_contains_Bridge_and_reference": true,
+  "latest_official_source": "https://derivative.ca/download",
+  "seed_sha256": "2a17096aa4a70d489b5180efde53e8d37e9dc85a52655d87eb633df751a7511f"
+}

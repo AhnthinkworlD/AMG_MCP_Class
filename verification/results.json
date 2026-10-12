@@ -1,12 +1,13 @@
 {
-  "TD_build": "2025.32820",
+  "TD_build": "2025.33230",
   "AMG_version": "1.0.0",
   "protocol": 2,
-  "Python": "3.13.16",
+  "Python": "3.11.2",
   "MCP_tool_count": 55,
   "endpoint": "http://127.0.0.1:9987/",
-  "currently_registered_9981_connection": "FAIL unknown_action: get_capabilities",
-  "Mac_runtime_verified": false,
+  "cached_old_connection_note": "Saved Codex config uses9987; verify active client separately",
+  "Mac_TD_render_verified": false,
+  "Mac_install_MCP_CI_verified": true,
   "examples": {
     "W05_PROMPT_PRACTICE": {
       "CHOP_samples_per_channel": 100,
@@ -18,8 +19,8 @@
       "Z_equals_zero_within_8bit_precision": true,
       "v05_to_v1_diameter_ratio": 0.5042735042735043,
       "v05_center_RGB": [
-        127,
-        127,
+        126,
+        126,
         254
       ],
       "v1_center_RGB": [
@@ -28,12 +29,12 @@
         254
       ],
       "time_different_pixels": [
-        437984,
-        398313
+        409651,
+        394876
       ],
       "time_mask_different_pixels": [
-        219938,
-        181015
+        186345,
+        152208
       ],
       "time_circle_mask_unchanged": false,
       "TOX_reload_different_pixels": 0
@@ -58,12 +59,12 @@
         254
       ],
       "time_different_pixels": [
-        404139,
-        432390
+        442030,
+        481053
       ],
       "time_mask_different_pixels": [
-        179419,
-        191646
+        177619,
+        197680
       ],
       "time_circle_mask_unchanged": false,
       "TOX_reload_different_pixels": 0
@@ -78,8 +79,8 @@
       "Z_equals_zero_within_8bit_precision": true,
       "v05_to_v1_diameter_ratio": 1.0,
       "v05_center_RGB": [
-        127,
-        127,
+        126,
+        126,
         254
       ],
       "v1_center_RGB": [
@@ -88,8 +89,8 @@
         254
       ],
       "time_different_pixels": [
-        1039892,
-        1018343
+        1039176,
+        1017334
       ],
       "time_mask_different_pixels": [
         0,
@@ -102,42 +103,14 @@
   "errors": 0,
   "warnings": 0,
   "method": "AI decomposed the written requests into standard MCP calls; actual TOP pixels and TOX reloads checked.",
-  "reuse": "Primary example recreates eight nodes; Geometry SOP input shell and animated Noise are copied from original container2.",
+  "reuse": "Primary example recreates eight nodes; Geometry SOP input shell and animated Noise are copied from W05_REFERENCE_10X10, originally based on user container2.",
   "arbitrary_empty_project_generation_verified": false,
   "full_CHOP_array_API_available": false,
   "operator_inventory_is_not_creation_allowlist": true,
-  "unallowed_chopToDAT_and_choptoDAT_rejected": true,
   "position_read_method": "Owned Math(+0.5) -> CHOP to TOP RGB -> PNG, then count unique XY / Z at 8-bit precision; temporary nodes removed.",
-  "original_fixed_Z_difference_pixels": 0,
   "top_left_cell_correspondence": true,
   "temporary_nodes_and_copies_removed": true,
-  "tools_tested": [
-    "td_begin_session",
-    "td_connect",
-    "td_copy_node",
-    "td_create_node",
-    "td_delete_node",
-    "td_disconnect",
-    "td_get_chop_channels",
-    "td_get_network_snapshot",
-    "td_get_param",
-    "td_get_td_version",
-    "td_health",
-    "td_list_children",
-    "td_list_params",
-    "td_load_component_tox",
-    "td_preview_top",
-    "td_save_component_tox",
-    "td_save_top_image",
-    "td_set_node_position",
-    "td_set_param",
-    "td_validate_network"
-  ],
-  "tools_tested_count": 20,
-  "all_55_tools_tested": false,
-  "live_container_paths": [
-    "/W03_BEGINNER_WATER/W05_PROMPT_PRACTICE",
-    "/W03_BEGINNER_WATER/W05_EXAMPLE_20X20",
-    "/W03_BEGINNER_WATER/W05_EXAMPLE_COLOR_ONLY"
-  ]
+  "reference_fixed_Z_difference_pixels": 0,
+  "registered_MCP_connected_to_latest_TD": true,
+  "MCP2": "2.2.x"
 }

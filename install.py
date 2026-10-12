@@ -25,8 +25,9 @@ def python_path(root, platform=None):
 def configurations(python, port, platform=None):
     platform = platform or sys.platform
     env = {'TD_MCP_URL': f'http://127.0.0.1:{port}/', 'TD_MCP_TIMEOUT': '15'}
-    server = {'command': str(python), 'args': ['-m', 'td_mcp_server.main'], 'env': env}
-    toml = ('[mcp_servers.amg_td]\ncommand = ' + json.dumps(str(python), ensure_ascii=False)
+    command = str(python).replace('\\', '/') if platform == 'win32' else str(python)
+    server = {'command': command, 'args': ['-m', 'td_mcp_server.main'], 'env': env}
+    toml = ('[mcp_servers.amg_td]\ncommand = ' + json.dumps(command, ensure_ascii=False)
             + '\nargs = ["-m", "td_mcp_server.main"]\n')
     if platform != 'win32':
         toml += 'disabled_tools = ' + json.dumps(WINDOWS_ONLY) + '\n'
