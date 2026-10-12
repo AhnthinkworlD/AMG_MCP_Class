@@ -1,0 +1,147 @@
+{
+  "TD_build": "2025.33230",
+  "AMG_version": "1.0.0",
+  "protocol": 2,
+  "Python": "3.11.2",
+  "MCP_tool_count": 55,
+  "endpoint": "http://127.0.0.1:9987/",
+  "active_registered_MCP_latest_connected": true,
+  "Mac_TD_render_verified": false,
+  "Mac_install_MCP_CI_verified": true,
+  "examples": {
+    "W05_PROMPT_PRACTICE": {
+      "CHOP_samples_per_channel": 100,
+      "visible_circles_at_v1": 100,
+      "visible_circles_at_v0": 0,
+      "unique_XY_at_PNG_precision": 100,
+      "unique_X": 10,
+      "unique_Y": 10,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 0.5042735042735043,
+      "v05_center_RGB": [
+        126,
+        126,
+        253
+      ],
+      "v1_center_RGB": [
+        253,
+        253,
+        253
+      ],
+      "time_different_pixels": [
+        416526,
+        380826
+      ],
+      "time_mask_different_pixels": [
+        199809,
+        154733
+      ],
+      "time_circle_mask_unchanged": false,
+      "TOX_reload_different_pixels": 0
+    },
+    "W05_EXAMPLE_20X20": {
+      "CHOP_samples_per_channel": 400,
+      "visible_circles_at_v1": 400,
+      "visible_circles_at_v0": 0,
+      "unique_XY_at_PNG_precision": 400,
+      "unique_X": 20,
+      "unique_Y": 20,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 0.5084745762711864,
+      "v05_center_RGB": [
+        126,
+        126,
+        254
+      ],
+      "v1_center_RGB": [
+        254,
+        254,
+        254
+      ],
+      "time_different_pixels": [
+        395134,
+        414554
+      ],
+      "time_mask_different_pixels": [
+        171121,
+        176329
+      ],
+      "time_circle_mask_unchanged": false,
+      "TOX_reload_different_pixels": 0
+    },
+    "W05_EXAMPLE_COLOR_ONLY": {
+      "CHOP_samples_per_channel": 100,
+      "visible_circles_at_v1": 100,
+      "visible_circles_at_v0": 100,
+      "unique_XY_at_PNG_precision": 100,
+      "unique_X": 10,
+      "unique_Y": 10,
+      "Z_equals_zero_within_8bit_precision": true,
+      "v05_to_v1_diameter_ratio": 1.0,
+      "v05_center_RGB": [
+        126,
+        126,
+        253
+      ],
+      "v1_center_RGB": [
+        253,
+        253,
+        253
+      ],
+      "time_different_pixels": [
+        966866,
+        993838
+      ],
+      "time_mask_different_pixels": [
+        0,
+        0
+      ],
+      "time_circle_mask_unchanged": true,
+      "TOX_reload_different_pixels": 0
+    }
+  },
+  "errors": 0,
+  "warnings": 0,
+  "method": "AI decomposed the written requests into standard MCP calls; actual TOP pixels and TOX reloads checked.",
+  "reuse": "Primary example recreates eight nodes; Geometry SOP input shell and animated Noise are copied from W05_REFERENCE_10X10, originally based on user container2.",
+  "arbitrary_empty_project_generation_verified": false,
+  "full_CHOP_array_API_available": false,
+  "operator_inventory_is_not_creation_allowlist": true,
+  "position_read_method": "Owned Math(+0.5) -> CHOP to TOP RGB -> PNG, then count unique XY / Z at 8-bit precision; temporary nodes removed.",
+  "reference_fixed_Z_difference_pixels": 0,
+  "top_left_cell_correspondence": true,
+  "temporary_nodes_and_copies_removed": true,
+  "date": "2026-10-12",
+  "prompts": {
+    "01-connect.txt": {
+      "sha256": "ee833f279c58e142ee3048ed88af8f6c0342d68f65c23890a2337d8c0d817382",
+      "executed_by": "Current AI agent interpreted this written request into native MCP calls",
+      "passed": true
+    },
+    "02-build.txt": {
+      "sha256": "625ff6326cca929d09bf7f0a6753e7f04a90228f84655d55e7d608bb0f5b7d0f",
+      "executed_by": "Current AI agent interpreted this written request into native MCP calls",
+      "passed": true
+    },
+    "03-check.txt": {
+      "sha256": "a82d98cd353d38d9a968612f28f6f865ced9fa51f50d27ee5bd87ba6c008089d",
+      "executed_by": "Current AI agent interpreted this written request into native MCP calls",
+      "passed": true
+    },
+    "04-build-20x20.txt": {
+      "sha256": "821f0c21baa5cc76bacfbe8cf62364274e2d00c309f26113b1ac213b9d5c9f4b",
+      "executed_by": "Current AI agent interpreted this written request into native MCP calls",
+      "passed": true
+    },
+    "05-build-color-only.txt": {
+      "sha256": "a1aa5e0dff18874a152787c52adec639b91c30f5b8c26add6c8ea362491a7efb",
+      "executed_by": "Current AI agent interpreted this written request into native MCP calls",
+      "passed": true
+    }
+  },
+  "fresh_native_MCP_calls": 271,
+  "verification_used_separate_work_copy": true,
+  "reference_structure_unchanged": true,
+  "verified_on": "Windows / TD2025.33230 / current registered MCP and fresh stdio clients",
+  "other_AI_clients_tested": false
+}

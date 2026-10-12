@@ -7,7 +7,7 @@
 
 ## 학생은 여기부터 시작
 
-[학생 설치와 첫 실습 안내](docs/STUDENT_START.md)를 먼저 읽습니다. [최신 Release](https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/latest)에서 **amg-mcp-class-1.0.3.zip** 전체를 받습니다. 수업 AI 안내는 Codex의 로컬 MCP 연결을 기준으로 합니다.
+[학생 설치와 첫 실습 안내](docs/STUDENT_START.md)를 먼저 읽습니다. [최신 Release](https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/latest)에서 **amg-mcp-class-1.0.4.zip** 전체를 받습니다. 수업은 로컬 STDIO MCP를 지원하는 AI에서 진행하며, 등록 UI는 실제 확인한 Codex 예시를 제공합니다.
 
 강사는 [Mac 사전 점검과 수업 진행](docs/TEACHER_MAC_CHECK.md), [복사해서 전달할 학생 공지](학생공지_복사해서전달.txt)를 사용합니다.
 
@@ -18,7 +18,7 @@
 
 **준비:** TouchDesigner, MCP를 지원하는 AI 클라이언트, 인터넷 연결. Windows는 Python이 없어도 설치 BAT이 공식 Python 3.13.16을 수업용 폴더에 자동 준비한다. 이미 실행 가능한 Python 3.10+가 있으면 사용한다. Mac은 [공식 Python 설치본](https://www.python.org/downloads/macos/)을 먼저 설치한다.
 
-GitHub Releases의 `amg-mcp-class-1.0.3.zip`을 받고 **압축을 모두 푼다.**
+GitHub Releases의 `amg-mcp-class-1.0.4.zip`을 받고 **압축을 모두 푼다.**
 
 | 순서 | Windows | Mac |
 |---|---|---|
@@ -45,7 +45,7 @@ Mac 더블클릭 파일은 Release ZIP에 실행 권한을 넣었다. Code → D
 
 ## 복사해서 사용할 제작 프롬프트
 
-[연결→제작→검증→변형 프롬프트](docs/EXAMPLE_PROMPTS.md)와 [실제 제작 검증 결과](docs/EXAMPLE_VERIFICATION.md)를 추가했다. 100개·400개·색만 변화 예제 3종의 완성 TOX와 실제 TOP 캡처를 포함한다.
+[연결→제작→검증→변형 프롬프트](docs/EXAMPLE_PROMPTS.md)와 [새 전문의 실제 제작 검증 결과](docs/W05_PROMPTS_V6_VERIFICATION.md)를 추가했다. 100개·400개·색만 변화 예제 3종의 완성 TOX와 실제 TOP 캡처를 포함한다.
 
 
 ## 2026-10-12 새 TD 시작 연결 수정
@@ -61,3 +61,8 @@ Mac 더블클릭 파일은 Release ZIP에 실행 권한을 넣었다. Code → D
 ## 실제 OS 설치 검사 결과
 
 Windows·Apple Silicon·Intel Mac의 설치와 MCP 서버 시작을 [원격에서 통과했습니다](docs/MAC_CI_VERIFICATION.md). Mac TD 실습은 사전 점검이 남아 있습니다.
+
+
+## 5주차 요청문 v6
+
+학생이 배치·색·크기·완료 기준을 설명하고 AI가 기준 예제를 읽어 MCP로 구현하는 전문으로 갱신했습니다. [5개 요청문의 실행 결과](docs/W05_PROMPTS_V6_VERIFICATION.md)를 확인합니다. 1.0.4는 프롬프트·수업 안내·검증 예제 추가이며 기존 설치 스크립트와 서버 wheel은 유지합니다.

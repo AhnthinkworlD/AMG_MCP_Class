@@ -1,4 +1,4 @@
-# 5주차 AMG MCP 설치와 첫 실습
+# 5주차 MCP 설치와 첫 실습
 
 이번 실습은 AI에 요청해서 TouchDesigner 안에 10×10 원 100개를 만드는 수업입니다. AI가 만든 결과를 직접 관찰하고 검사하는 것까지 진행합니다.
 
@@ -6,7 +6,7 @@
 
 1. 강사가 공유한 [최신 배포 ZIP](https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/latest)을 내려받아 **전부 압축을 풉니다.** 설치 파일 하나만 꺼내지 마세요.
 2. TouchDesigner를 준비합니다. 현재 최신 정식 버전은 **2025.33230**입니다(2026-10-12 확인). [공식 다운로드](https://derivative.ca/download)에서 확인하고 설치합니다.
-3. 수업에서는 **Codex의 로컬 MCP 연결**을 기준으로 진행합니다. 앱에서 로그인과 메시지 전송이 되는지 미리 확인합니다. 사용할 수 있는 모델과 사용량은 본인의 계정에 따라 달라집니다. [공식 MCP 안내](https://learn.chatgpt.com/docs/extend/mcp?surface=cli)
+3. 수업에서는 **로컬 STDIO MCP를 지원하는 AI**를 사용합니다. 아래 등록 UI는 실제 확인한 Codex 예시입니다. 다른 프로그램은 공식 MCP 등록 방식에 같은 Command·Arguments·Environment를 대응합니다. 앱에서 로그인과 메시지 전송이 되는지 미리 확인합니다. 사용할 수 있는 모델과 사용량은 본인의 계정에 따라 달라집니다. [공식 MCP 안내](https://learn.chatgpt.com/docs/extend/mcp?surface=cli)
 4. **Mac만:** [검증 버전 Python 3.14.7 Mac 설치본](https://www.python.org/ftp/python/3.14.7/python-3.14.7-macos11.pkg)을 먼저 설치하고, Python 설치 폴더의 `Install Certificates.command`도 실행합니다. Windows는 설치 파일이 필요한 Python을 자동으로 준비합니다.
 
 Mac 설치·서버 시작은 [Apple Silicon·Intel 원격 검사](MAC_CI_VERIFICATION.md)를 통과했습니다. 실제 TD 실습은 수업 전 Mac 학생 한 명과 먼저 확인합니다. 이미 Python 3.10 이상이 있다면 설치 파일이 실행 가능 여부를 점검하지만, 모든 Python 버전의 Mac 조합을 시험한 것은 아닙니다.
@@ -22,7 +22,7 @@ Mac 설치·서버 시작은 [Apple Silicon·Intel 원격 검사](MAC_CI_VERIFIC
 
 첫 설치는 인터넷으로 필요한 파일을 받으므로 잠시 기다립니다. 창에 **FAILED**가 보이면 다음 단계로 넘어가지 말고 창과 로그를 강사에게 보여주세요.
 
-## Codex에 AMG MCP 등록
+## MCP 등록 — Codex 예시
 
 1. 설치가 끝나면 열린 `AMG_MCP_Class` 폴더에서 `Codex_설정.toml`을 찾습니다. Windows는 사용자 홈의 `AMG_MCP_Class`, Mac은 `~/AMG_MCP_Class`입니다.
 2. Codex 설정에서 **MCP servers → Add server**를 열고 아래 값을 넣습니다.
@@ -64,3 +64,6 @@ AI에게 설명만 듣고 끝내지 말고 **실제 TD 화면과 검사 결과**
 
 
 Codex 설정의 Command에는 생성된 TOML `command`의 **큰따옴표 안 경로만** 복사합니다. Windows 경로는 복사하기 쉽게 `/`로 생성합니다. 인수 `-m`과 `td_mcp_server.main`은 별도로 추가합니다.
+
+
+현재 전문은 목표·배치·색·크기·완료 조건으로 작성한 v6입니다. [새 요청문의 실제 실행 결과](W05_PROMPTS_V6_VERIFICATION.md)를 확인할 수 있습니다.
