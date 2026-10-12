@@ -2,7 +2,7 @@
 
 1. macOS 13 이상에서 CPU에 맞는 TouchDesigner 2025를 준비한다. 수업 제작·Windows 실행 검증 기준은 **2025.33230**이며 Mac에서 해당 빌드의 실기는 미검증이다. [Derivative 안내](https://derivative.ca/UserGuide/MacOS)
 2. 별도 [Python 3.14.7 공식 Mac 설치본](https://www.python.org/ftp/python/3.14.7/python-3.14.7-macos11.pkg)을 설치한다. Universal2는 Apple Silicon과 Intel을 지원한다. 공식 Python의 `/Applications/Python 버전/Install Certificates.command`도 실행한다. [Python 안내](https://docs.python.org/3/using/mac.html)
-3. GitHub **Releases**의 `amg-mcp-class-1.0.3.zip`을 내려받아 전부 압축을 푼다.
+3. GitHub **Releases**의 `amg-mcp-class-1.0.4.zip`을 내려받아 전부 압축을 푼다.
 4. `01_Install_Mac.command`를 더블클릭하고 **INSTALL OK**를 기다린다.
 5. `touchdesigner/AMG_MCP_Class_10x10.toe`를 열고 로딩을 기다린다.
 6. `02_Check_Mac.command`를 더블클릭한다. **CHECK OK**와 내가 연 `project_name`, `protocol_version: 2`, `required_actions_present: true`, `project_children_read: true`를 확인한다.

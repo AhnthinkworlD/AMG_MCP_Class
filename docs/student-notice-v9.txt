@@ -1,0 +1,49 @@
+[5주차 수업 전 준비 안내 - TouchDesigner + AI]
+
+이번 시간에는 Codex와 AMG_MCP를 연결해 TouchDesigner에서10×10 원100개를 만들고, 실제 화면을 검사하는 실습을 합니다. 수업 시작 전 아래 준비를 마쳐주세요. 사전 준비는 연결 확인까지이며, 작품 제작은 수업에서 함께 진행합니다.
+
+1. 준비할 것
+- 수업에 사용할 노트북, 충전기, 인터넷 연결
+- TouchDesigner: 수업 검증 기준2025.33230
+- Codex를 로컬로 사용할 수 있는 데스크톱 앱과 로그인 계정. 메시지를 보내 응답을 받을 수 있는지 확인해주세요.
+- 수업 ZIP: amg-mcp-class-1.0.4.zip
+  다운로드: https://github.com/AhnthinkworlD/AMG_MCP_Class/releases/download/v1.0.4/amg-mcp-class-1.0.4.zip
+  압축은 전부 풀어주세요. 설치 파일 하나만 꺼내거나 ZIP 안에서 실행하지 않습니다.
+
+2. Windows 학생
+① 압축을 푼 폴더의01_Install_Windows.bat 더블클릭 → INSTALL OK 확인
+② touchdesigner 폴더의AMG_MCP_Class_10x10.toe 열기 → 로딩 완료까지 기다리기
+③ 02_Check_Windows.bat 더블클릭 → CHECK OK와 내가 연 파일 이름 확인
+Python을 따로 설치할 필요는 없습니다. 설치 파일이 필요한 Python을 준비합니다.
+
+3. Mac 학생
+① Python3.14.7 공식 Mac 설치본을 먼저 설치하고, 응용 프로그램의Python3.14 폴더에서Install Certificates.command 실행
+   https://www.python.org/ftp/python/3.14.7/python-3.14.7-macos11.pkg
+② 압축을 푼 폴더의01_Install_Mac.command 실행 → INSTALL OK 확인
+③ touchdesigner/AMG_MCP_Class_10x10.toe 열기 → 로딩 완료까지 기다리기
+④ 02_Check_Mac.command 실행 → CHECK OK와 내가 연 파일 이름 확인
+더블클릭이 실행되지 않으면 첨부한 사전 준비 안내의Mac 실행 방법을 따라주세요.
+
+4. Codex 연결 - 설치만으로 자동 등록되지 않습니다
+설치 후 생성된AMG_MCP_Class 폴더에서Codex_설정.toml을 찾고, 첨부한 사전 준비 안내의Codex 등록 순서를 따라주세요.
+- 이름: amg_td / 방식: STDIO
+- Command: 자기Codex_설정.toml에 적힌command의 경로만 복사
+- Arguments: -m 과 td_mcp_server.main 을 각각 추가
+- 환경 변수: TD_MCP_URL = http://127.0.0.1:9987/
+  TD_MCP_TIMEOUT = 15
+Mac은 생성된TOML의Mac 전용 도구 제외 설정까지 적용해주세요. 다른 사람의Python 경로를 복사하지 않습니다.
+저장 후MCP를Restart하고 새 로컬 채팅을 시작합니다. TD 예제는 계속 열어둡니다.
+
+5. 준비 완료 확인
+수업 ZIP의prompts/01-connect.txt 본문 전체를Codex에 붙여넣으세요.
+Codex가 실제MCP 도구로AMG_MCP_Class_10x10.toe와W05_REFERENCE_10X10을 읽고 확인하면 준비 완료입니다. 일반 설명만 답한 것은 연결 확인이 아닙니다.
+02-build와03-check는 수업 시간에 함께 실행합니다.
+
+6. 문제가 생기면
+FAILED가 나오거나Codex에서연결이 안 되면 다음 단계로 넘기지 말고, 실패한 단계·오류 화면·AMG_MCP_Class/logs의 해당 로그를 알려주세요. Mac은Apple Silicon/Intel과macOS 버전도 함께 알려주세요.
+Codex 설치·로그인·사용량 제한으로 진행이 어렵다면 수업 전에 알려주세요. 추가 구독을 먼저 구매할 필요는 없습니다.
+
+수업 당일에는압축을 푼 수업 폴더와TD 예제, Codex를 열 수 있는 상태로 준비해주세요.
+상세 순서: 첨부5주차_학생_사전준비_설치와Codex연결_v9.pdf
+온라인 기본 안내: https://github.com/AhnthinkworlD/AMG_MCP_Class/blob/main/docs/STUDENT_START.md
+문의: ahnthinkgood@gmail.com
