@@ -21,3 +21,8 @@ Mac 설치와 MCP 서버 시작은 [Apple Silicon·Intel 원격 검사](MAC_CI_V
 ## 버전이 다시 올라오면
 
 학생은 다운로드 페이지의 Official 최신 버전을 확인합니다. 현재 기록은2025.33230의 실행 근거이며, 이후 모든 버전의 호환을 보장하지 않습니다. 설치 후 TD About과 연결 점검 로그의 실제 빌드를 함께 읽습니다.
+
+
+## 1.0.3 패키지 원격 검사
+
+최신 저장 예제와 Windows Command 복사 경로 보강을 포함한 패키지의 Windows·Apple Silicon·Intel 설치/서버 시작·단위검사5개가 [원격에서 통과했습니다](https://github.com/AhnthinkworlD/AMG_MCP_Class/actions/runs/38197879240). [환경별 수치](../verification/ci-install-1.0.3.json). Mac TD실기 미검증은 유지합니다.

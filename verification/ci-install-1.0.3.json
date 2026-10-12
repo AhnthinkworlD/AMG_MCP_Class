@@ -1,0 +1,43 @@
+{
+  "package": "1.0.3",
+  "run_url": "https://github.com/AhnthinkworlD/AMG_MCP_Class/actions/runs/38197879240",
+  "tested_commit": "8fc49ed456f8d4074d45f1eac8b0bb06c8ad8c64",
+  "platforms": {
+    "amg-validation-macos-14": {
+      "MCP_stdio_startup": true,
+      "tool_count": 55,
+      "TouchDesigner_tested": false,
+      "python": "3.14.7",
+      "platform": "darwin",
+      "architecture": "arm64",
+      "os_version": "14.8.9",
+      "mcp": "2.3.0",
+      "httpx": "0.28.1"
+    },
+    "amg-validation-macos-15-intel": {
+      "MCP_stdio_startup": true,
+      "tool_count": 55,
+      "TouchDesigner_tested": false,
+      "python": "3.14.7",
+      "platform": "darwin",
+      "architecture": "x86_64",
+      "os_version": "15.7.9",
+      "mcp": "2.3.0",
+      "httpx": "0.28.1"
+    },
+    "amg-validation-windows-latest": {
+      "MCP_stdio_startup": true,
+      "tool_count": 55,
+      "TouchDesigner_tested": false,
+      "python": "3.13.16",
+      "platform": "win32",
+      "architecture": "AMD64",
+      "os_version": "2025Server",
+      "mcp": "2.3.0",
+      "httpx": "0.28.1"
+    }
+  },
+  "jobs_passed": 3,
+  "unit_tests": 5,
+  "Mac_TD_tested": false
+}
